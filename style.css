@@ -1,0 +1,252 @@
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    /*border-top:15px solid #81d742;*/
+    /*margin-top: 20px;*/
+    margin-top: 0px;
+    /*padding-top: 20px;*/
+    margin-bottom: 40px;
+    /*background-color: #f1f1f1;*/
+    /*background-color: #f6f6f6;*/
+
+    /*background-color: #000;*/
+}
+
+.container, .main {
+    background-color: #fff;
+}
+
+.main {
+    /*background-color: #f6f6f6;*/
+/*    background: url(img/bg.png) 0% 0% repeat-x;
+    padding-top: 120px;*/
+
+}
+
+.green {
+    background-color: #81d742;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.header, .header-small {
+    /*margin-top:80px;*/
+    padding-top: 30px;
+    margin-bottom: 30px;
+    /*height:80px;*/
+    /*text-align: center;*/
+    background-color: #fff;
+    color:#ccc;
+    font-family: georgia,serif;
+    font-size: smaller;
+    /*border-bottom:1px solid #c0c0c0;*/
+    background-image: url('img/mp-bg-01.jpg');
+    /*background-image: url('img/mb-25-copy.jpg');*/
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+height:212px;
+}
+
+#logo {
+    position: relative;
+    /*top: 50%;*/
+    -webkit-transform: translateY(-50%);
+    -ms-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    -o-transformt:translateY(-50%);
+top:75px;
+}
+
+.logo {
+/*    font-family: 'Merriweather', serif;
+    padding:10px;
+    border:5px solid #000;
+    text-align: center;
+    font-weight: bolder;*/
+    height: 45px;
+    border: 2px solid #fff;
+    padding: 10px;
+}
+
+.site-footer {
+    background-color: #fff;
+    color:#81d742;
+    padding:10px;
+}
+
+.posts {
+    /*margin-top:20px;*/
+}
+
+.post {
+    margin-bottom: 40px;
+    /*margin-top:20px;*/
+    padding-bottom: 40px;
+    /*border-bottom: 1px solid #ccc;*/
+}
+
+.post h2 {
+    /*text-align: center;*/
+    margin-bottom: 0;
+}
+
+.post h1 {
+    font-family: 'PT Serif', serif; 
+    font-weight: 700;
+    letter-spacing: -1px;
+    /*text-align: center;*/
+}
+
+.single h1, .single .entry-meta {
+text-align:center;
+}
+
+.post .meta, .post .entry-meta {
+    /*text-align: center;*/
+    color:#666;
+    margin-bottom:15px;
+    font-size: smaller;
+}
+
+.post .social {
+    color:#666;
+    font-size: smaller;   
+}
+
+
+a {
+    /*color: #81d742;*/
+    /*color:#ea4b2b;*/
+    /*border-bottom: dotted #cccccc 1px;*/
+    color:#ea4b2b;
+}
+
+.post h1 a {
+    color:#000;
+}
+
+.section-header {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    /*font-family: 'Open Sans','Merriweather', serif;*/
+    font-family: 'PT Serif', serif;
+}
+
+.section-subtitle {
+    font-size: smaller;
+}
+
+.log {
+    /*background-color: #f1f1f1;*/
+    padding:1em;
+    /*margin-top:80px;*/
+}
+
+.log .post {
+    margin:0;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.log .post p {
+    font-size: smaller;
+    margin:0;
+}
+
+.log .post-title {
+    font-family: "Helvetica",sans-serif;
+    font-weight: bold;
+}
+
+.log .post-title a {
+    /*color:#000;*/
+    color:#ea4b2b;
+    border:none;
+}
+
+.log .post-date {
+    font-size: x-small;
+    text-transform: uppercase;
+    color:#ccc;
+}
+
+.blog {
+    border-right: 1px solid #666;
+}
+
+.negative {
+    /*background-color: #373737;*/
+    background-color: #ea4b2b;
+    color:#fff;
+    padding:5px 10px;
+}
+
+#header {
+    width: 100%;
+    max-width: 1088px;
+    margin: 0 auto 22px auto;
+    text-align: center;
+    font-family: Georgia,serif;
+    background-image: url(img/bg.png);
+    background-repeat: repeat-x;
+}
+
+#header #home-link {
+    position: absolute;
+    left: 50%;
+    /*margin-left: -77px;*/
+    margin-left: -90px;
+    top: 60px;
+    /*padding: 3px 4px;*/
+    padding: 22px 4px;
+    background-color: #fff;
+    /*background-color: #fdfcfc;*/
+}
+
+.share-buttons {
+}
+
+.share-buttons .wpsocialite {
+margin:0;
+padding:0;
+line-height:100%;
+}
+
+.share-buttons .wpsocialite.small > li {
+width:inherit;
+margin-right:20px;
+}
+.share-buttons .wpsocialite.small .socialite {
+width:auto;
+}
+
+.nav-links {
+margin-top:20px;
+margin-bottom:40px;
+padding-top:20px;
+padding-bottom:20px;
+border-bottom:1px solid #ccc;
+border-top:1px solid #ccc;
+}
+
+.entry-footer {
+margin-top:20px;
+}
+
+@media (max-width:30em) {
+.header {
+height:42px;
+}
+#logo {
+top:2px;
+}
+.logo {
+height:30px;
+padding:5px;
+}
+}
