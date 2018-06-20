@@ -40,7 +40,7 @@
 
 		<footer class="row entry-footer">
 			<div class="share-buttons medium-12 columns">
-				share
+				<?php wpsocialite_markup(); ?>
 			</div><!-- share-buttons -->
 
 			<div class="post-spacer-hr"></div>

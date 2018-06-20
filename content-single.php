@@ -32,7 +32,7 @@
 	<div class="row">
 		<footer class="entry-footer">
 			<div class="share-buttons medium-12 columns">
-				share
+				<?php wpsocialite_markup(); ?>
 			</div>
 			
 			<div class="small-12 medium-9 columns">
