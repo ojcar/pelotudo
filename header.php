@@ -17,7 +17,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/foundation.min.css" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans|PT+Serif:700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Karla|Roboto+Slab" rel="stylesheet">
 
 <script src="js/vendor/modernizr.js"></script>
 
@@ -25,13 +25,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-<header class="header">
-  <div class="row">
-    <div class="large-12 columns">
-    	<div id="logo" class="text-center">
-      <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/mp-logo-01a.png" height="20" class="logo hide-for-small-only" /></a>
-      </div>
-    </div>        
+  <div class="row header">
+    <div class="small-12 columns logo"><a href="/">MUNDO PELOTA</a></div>
   </div>
-</header>

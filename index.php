@@ -14,56 +14,35 @@
 get_header(); ?>
 
 <div class="row main">
-    <div class="small-12 medium-8 columns">
+    <div class="small-12 columns">
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main" role="main">
 
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
-<?php 
+				<?php
+				if ( have_posts() ) :
 
-				$args = array(
-			      'tax_query' => array(
-			        array(
-			          'taxonomy' => 'post_format',
-			          'field'    => 'slug',
-			          'terms'    => 'post-format-aside',
-			          'operator' => 'NOT IN'
-			        )
-			      )
-			    );
-				
-				query_posts( $args );
-			?>
-			<?php if ( have_posts() ) : ?>
+					/* Start the Loop */
+					while ( have_posts() ) : the_post();
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php
-						/* Include the Post-Format-specific template for the content.
+						/*
+						 * Include the Post-Format-specific template for the content.
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
 						get_template_part( 'content', get_post_format() );
-					?>
 
-				<?php endwhile; ?>
+					endwhile;
 
-				<?php pelotudo_paging_nav(); ?>
+					pelotudo_paging_nav();
+					
+				else :
+					get_template_part( 'content', 'none' );
+				endif;
+				?>
 
-			<?php else : ?>
-
-				<?php get_template_part( 'content', 'none' ); ?>
-
-			<?php endif; ?>
-
-			</main><!-- #main -->
-		</div><!-- #primary -->
+				</main><!-- #main -->
+			</div><!-- #primary -->
 	</div>
-
-	<div class="medium-4 columns show-for-medium-up sidebar">
-		<?php get_sidebar(); ?>
-	</div>
-
 </div>
 
 <?php get_footer(); ?>
